@@ -8,7 +8,7 @@ source("kms_mod.R")
 # H : bandwidth matrix
 # method : FB (fixed bandwidth), SP (sample point), NN (Nearest neighbors) 
 
-sim_matrix_clust <- function(data, H, K, method = c("FB", "SP", "NN")) {
+kmsMatrix <- function(data, H, K, method = c("FB", "SP", "NN")) {
   
   t <- dim(data)[1]
   p <- dim(data)[2]
